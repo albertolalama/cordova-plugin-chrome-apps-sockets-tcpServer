@@ -81,19 +81,19 @@ public class ChromeSocketsTcpServer extends CordovaPlugin {
     return true;
   }
 
-  @Override
-  public void onDestroy() {
-    super.onDestroy();
-    closeAllSockets();
-    stopSelectorThread();
-  }
+  // @Override
+  // public void onDestroy() {
+  //   super.onDestroy();
+  //   closeAllSockets();
+  //   stopSelectorThread();
+  // }
 
-  @Override
-  public void onReset() {
-    super.onReset();
-    closeAllSockets();
-    stopSelectorThread();
-  }
+  // @Override
+  // public void onReset() {
+  //   super.onReset();
+  //   closeAllSockets();
+  //   stopSelectorThread();
+  // }
 
   private JSONObject buildErrorInfo(int code, String message) {
     JSONObject error = new JSONObject();
